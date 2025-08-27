@@ -1,0 +1,62 @@
+{
+ "fingerprints":
+ [
+  {
+   "name":"CINC ZCL_SAPDEV_RAP_MANAGED_BASE===CCAU.abap",
+   "fingerprint":"oRoP/OCJpLI8BydLfb5FA/ZRMxq2y4QjFW7Fe1XEYnEbAz8pv2jk5/OHuq593WHkaPSXHLEA/WPQxDr3lgqT7Q=="
+  },
+  {
+   "name":"CINC ZCL_SAPDEV_RAP_MANAGED_BASE===CCDEF.abap",
+   "fingerprint":"wjkFAgNoLtGUSvh0WjHwkzPPCYgifGUa6l0VMUEatCv3A+Kx7qKnVHj2Dg7I3K20iZDofNAHXnFspRy7+YyjRQ=="
+  },
+  {
+   "name":"CINC ZCL_SAPDEV_RAP_MANAGED_BASE===CCIMP.abap",
+   "fingerprint":"LBN7lXOI12Vh2BDGQ76s8z64d0sPHIBoTMKGVvcO+AHV376cwFHUOBrD2MBIjztvFMQu/+DPWh5do2N3l3XtYA=="
+  },
+  {
+   "name":"CINC ZCL_SAPDEV_RAP_MANAGED_BASE===CCMAC.abap",
+   "fingerprint":"O9jQaTMwfcTptKkF/SAnlvZfPko+stvGFzOI39xEKYEFnLoezdzkmjy5vloDFBQC91T9miTL6GZ4uymDzHbKbA=="
+  },
+  {
+   "name":"CLAS ZCL_SAPDEV_RAP_MANAGED_BASE.asx.json",
+   "fingerprint":"ckbbG5btLRxCkNyFzrVgGdr3MZ+JDTnAw6N6z7MBXaolzB/pFicL13ATQ1+E4P4MwmK68oDsg7qIWB+s+X4PHA=="
+  },
+  {
+   "name":"CLSD ZCL_SAPDEV_RAP_MANAGED_BASE.abap",
+   "fingerprint":"iFnQYK9yHD+JgM3suHVEgJAWEF+6Ffhou0XREb3fsAdRBVBnykSKVEPTUIqttuBGTj6W5zvcg/Fka5m/f7Bzsg=="
+  },
+  {
+   "name":"CPRI ZCL_SAPDEV_RAP_MANAGED_BASE.abap",
+   "fingerprint":"+FPTuLVJwfnol2/Hh2Y+vCj+6YUQWIye1sUncoVe4MMEqyMCMoOPAIDtyWlCWygIm9E1AtkNdwLUNnacQEVABA=="
+  },
+  {
+   "name":"CPRO ZCL_SAPDEV_RAP_MANAGED_BASE.abap",
+   "fingerprint":"ZAAQ4jQeSIIjZF9FSOL+fBB90PtfKP6yQjXzKMnypCE4jZMPY8wPPrcY2c7G+pq/6JdVocg6CU+Uhfw1IATyeg=="
+  },
+  {
+   "name":"CPUB ZCL_SAPDEV_RAP_MANAGED_BASE.abap",
+   "fingerprint":"X/GVEOgj3LlISP0hUuZLCL61tQm8pjzBjnqFlQsgi9nVkqOEFxKACddGgDGlXaGMrv/yLk+Ob1pfCC6kWLVi1g=="
+  },
+  {
+   "name":"METH CONSTRUCTOR.abap",
+   "fingerprint":"JxSywNsV7kdsQm0uIQaEdQCBDktCeCxpkE9/0g+aGWTNX0qngKjDeJCWeppuIrqOA4QFOAvTI0m4FpQ+eqMCWw=="
+  },
+  {
+   "name":"METH FILL_PATH.abap",
+   "fingerprint":"CuCt6JhygdgmZ8zMT8ZQ60ue2Yqs/2AOuRL0L+rHcAJtLYdpEmattPLbUe9E5+0P3LLft04exrhUw3EI0oeXJQ=="
+  },
+  {
+   "name":"METH READ_ANCESTOR.abap",
+   "fingerprint":"pE1USt6iyQhyHTCi3Y8Fe7YhhTRReoshl0UryfkccsbVD1lDxWLrQQBYf7B2rp9O+EfUp1veE17603LuCfI99w=="
+  },
+  {
+   "name":"METH VALIDATE_MANDATORY_FIELDS.abap",
+   "fingerprint":"4DaoxpKpK5WYj3lIA3OnwKJLMZoJU7hgpr/4boizW0umRSt9ICVXah+VH+U9SHdOBVgbW60oTqZo1YMLzEa4qQ=="
+  },
+  {
+   "name":"REPS ZCL_SAPDEV_RAP_MANAGED_BASE===CT.abap",
+   "fingerprint":"O9Kynk/ecKb+VrzpFeATLfUqPXMa24cqBU2FjTsDCw29wZ5kCetKTa0Dz3lHb1/sYGtrdKWY1b9vII06qFmKtA=="
+  }
+ ],
+ "fingerprintAll":"vAyjplO1cnSltSc4sP8JKz48O8S7vn6YSPkFJ9l71nJosFkGjZspEPcIykFKC4eaA16abY02NVHgKdatwerdTw=="
+}

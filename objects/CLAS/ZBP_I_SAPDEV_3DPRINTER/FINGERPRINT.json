@@ -1,0 +1,46 @@
+{
+ "fingerprints":
+ [
+  {
+   "name":"CINC ZBP_I_SAPDEV_3DPRINTER========CCAU.abap",
+   "fingerprint":"OtQt2WDTVrcF2LN6vVHWEEba5XCrP5YzUfjcvgvxVwm7iqn0A+qyzbwmqRZH3p6gcxkwWFy8lXUjr1gu4PLS+Q=="
+  },
+  {
+   "name":"CINC ZBP_I_SAPDEV_3DPRINTER========CCDEF.abap",
+   "fingerprint":"CCIi0OuqtUOsaraF9VAhB5CO62QbxqR6P9j7InADjisY/HxsyKeXNUYgcPJcbAyqKZlFqCXqjUvaUbKaZAwgAg=="
+  },
+  {
+   "name":"CINC ZBP_I_SAPDEV_3DPRINTER========CCIMP.abap",
+   "fingerprint":"sfgAym8LKq1dthSsJa6U1pBJhapt7HpGfWcIVYgDEf48xOuG93t1B63xZ6P52C7ABMOil3yo5nbmTwB3Yybq8g=="
+  },
+  {
+   "name":"CINC ZBP_I_SAPDEV_3DPRINTER========CCMAC.abap",
+   "fingerprint":"RGy9BPRQPjuSB7mXmWwaQIHEDlIGpNnyT6yC7ip9BJ//s4SqCDZ3GPI9fbUVlZXzh/WVBcend+50rxmucPWqcg=="
+  },
+  {
+   "name":"CLAS ZBP_I_SAPDEV_3DPRINTER.asx.json",
+   "fingerprint":"n2uBhago7Is9huN/pAaw59ZsU+n5IE0YoTvUkXIJhs/nhy3vdCD3ppVJn5uT/1WhMr/Ma8SqdJuIvro5J7jkwQ=="
+  },
+  {
+   "name":"CLSD ZBP_I_SAPDEV_3DPRINTER.abap",
+   "fingerprint":"YlsGiccealLrMjoHYqApfs1VS+/1CquLG2fNiW7DNSv0geviurAYXsxLbsI0yseJKLtX8VRd2nMRNiY0+Ja7RQ=="
+  },
+  {
+   "name":"CPRI ZBP_I_SAPDEV_3DPRINTER.abap",
+   "fingerprint":"oHJtHJ/5DEyzL0GxS0fGx57GdRr0H2bYBRsSQUnccnisR6fKYWns8I2t2jk5KLjdRHqxqGMpm1/nr7wga+Mjmg=="
+  },
+  {
+   "name":"CPRO ZBP_I_SAPDEV_3DPRINTER.abap",
+   "fingerprint":"EPr/lzDHXtmhXyc6Z0XGUf8lmN360EtVMO7J7Ssudg7n4s0JqDtF+tuuzxz3zAox2nk0idZhCybTdEao98XcNA=="
+  },
+  {
+   "name":"CPUB ZBP_I_SAPDEV_3DPRINTER.abap",
+   "fingerprint":"FlWjHQFXJNKsvFVi+4Cd8juzUPYihWrqZHlmjdbboe1frYlf9Y4UuGiSgJHJ1Gl8Lu0ekp8OJmupOo0Yhb0lMQ=="
+  },
+  {
+   "name":"REPS ZBP_I_SAPDEV_3DPRINTER========CT.abap",
+   "fingerprint":"zONE+w6rHYSiolmz+dCNvBO6THBTyd3t5JLKumYDzrXCirEy/Z87mu4+s8iTNypU+8n1qkvtpcIJ/8sYapj5Wg=="
+  }
+ ],
+ "fingerprintAll":"pXgRvj9bqPZAf0knquZRX98Nf1d4PkHL1wqSm6Aysr4syxD/fdHVFDVu56iTYAJ5d8oERvQqLRVlA6Wi5Fet/Q=="
+}

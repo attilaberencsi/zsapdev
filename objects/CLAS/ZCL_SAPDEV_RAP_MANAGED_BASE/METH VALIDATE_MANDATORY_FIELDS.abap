@@ -1,0 +1,232 @@
+  METHOD validate_mandatory_fields.
+*    CONSTANTS co_state_area TYPE string VALUE 'VALIDATE_MANDATORY_FIELDS'.
+*
+*    " TODO: "DATA entity_name  TYPE cl_abap_behvdescr=>t_typename.
+*    DATA entity_name  TYPE abp_entity_name.
+*    DATA read_control TYPE REF TO data.
+*
+*    FIELD-SYMBOLS <keys>                 TYPE STANDARD TABLE.
+*    FIELD-SYMBOLS <entities>             TYPE STANDARD TABLE.
+*    FIELD-SYMBOLS <permission_keys>      TYPE STANDARD TABLE.
+*    FIELD-SYMBOLS <instance_permissions> TYPE STANDARD TABLE.
+*
+*    " Extract Entity Name
+*    " TODO: DATA(rap_typename) = cl_abap_behvdescr=>get_abs_typename_from_data_ref( REF #( keys ) ).
+*
+*    DATA(type_descriptor) = cl_abap_structdescr=>describe_by_data_ref( p_data_ref = REF #( keys )
+**        EXCEPTIONS
+**                                                                       reference_is_initial = 1
+**                                                                       others     = 2
+*                            ).
+*    IF sy-subrc <> 0.
+**       MESSAGE ID SY-MSGID TYPE SY-MSGTY NUMBER SY-MSGNO
+**         WITH SY-MSGV1 SY-MSGV2 SY-MSGV3 SY-MSGV4.
+*    ENDIF.
+*
+*    DATA(relative_name) = type_descriptor->get_relative_name( ).
+*    DATA(absolute_name) = type_descriptor->absolute_name.
+*    DATA(rap_typeNAME) = CONV string( absolute_name ).
+*
+*    " DATA(structure_descriptor) = CAST cl_abap_structdescr(  type_descriptor ).
+*
+**    structure_descriptor->get_bdef_derived_type(
+**      EXPORTING
+**        p_entity   =
+**        p_kind     =
+***        p_sub_name =
+***      RECEIVING
+***        p_descr    =
+**    ).
+***    CATCH cx_sy_rtti_syntax_error.
+***    CATCH cx_sy_bdef_derived_type_error.
+***    CATCH cx_sy_rtti_type_not_released.
+*
+*    DATA(left_part_cutted) = substring_after( val = rap_typename
+*                                              sub = '\ENTITY=' ) ##NO_TEXT.
+*
+*    entity_name = substring_before( val = left_part_cutted
+*                                    sub = '\' ) ##NO_TEXT.
+*
+*    IF entity_name IS INITIAL.
+*      entity_name = left_part_cutted.
+*    ENDIF.
+*
+*    " FETCH ENTITY INSTANCES TO BE CHECKED
+*
+*    " Create data with the required types for the READ operation
+*
+*    "TODO:
+**    cl_abap_tabledescr=>get_bdef_derived_type(
+**      EXPORTING
+**        p_entity   =
+**        p_kind     =
+***        p_sub_name =
+***      RECEIVING
+***        p_descr    =
+**    ).
+***    CATCH cx_sy_rtti_syntax_error.
+***    CATCH cx_sy_bdef_derived_type_error.
+***    CATCH cx_sy_rtti_type_not_released.
+*
+*    " Read keys
+*    DATA(keys_ref) = cl_abap_behvdescr=>create_data( p_root = bdef_name
+*                                                     p_name = entity_name
+*                                                     p_op   = if_abap_behv=>op-r-read
+*                                                     p_kind = if_abap_behv=>typekind-import ).
+*
+*    ASSIGN keys_ref->* TO <keys>.
+*    MOVE-CORRESPONDING keys TO <keys>.
+*
+*    " Control structure - we need all fields for the validation
+*    LOOP AT <keys> ASSIGNING FIELD-SYMBOL(<key>).
+*      ASSIGN COMPONENT cl_abap_behv=>co_techfield_name-control OF STRUCTURE <key> TO FIELD-SYMBOL(<%control>).
+*
+*      IF sy-tabix = 1.
+*        CREATE DATA read_control LIKE <%control>.
+*        ASSIGN read_control->* TO FIELD-SYMBOL(<read_control>).
+*        DATA(components) = CAST cl_abap_structdescr( cl_abap_structdescr=>describe_by_data(
+*                                                         p_data = <%control> ) )->components.
+*        LOOP AT components INTO DATA(field_name).
+*          <read_control>-(field_name-name) = if_abap_behv=>mk-on.
+*        ENDLOOP.
+*      ENDIF.
+*
+*      MOVE-CORRESPONDING <read_control> TO <%control>.
+*    ENDLOOP.
+*
+*    " Read result
+*    DATA(entities_ref) = cl_abap_behvdescr=>create_data( p_root = bdef_name
+*                                                         p_name = entity_name
+*                                                         p_op   = if_abap_behv=>op-r-read
+*                                                         p_kind = if_abap_behv=>typekind-result ).
+*
+*    " Read operations
+*    DATA(eml_reads) = VALUE abp_behv_retrievals_tab( ( op          = if_abap_behv=>op-r-read
+*                                                       entity_name = entity_name
+*                                                       instances   = REF data( <keys> )
+*                                                       full        = abap_true
+*                                                       results     = entities_ref ) ).
+*
+*    " Read the entity instances
+*    READ ENTITIES OPERATIONS eml_reads FAILED FINAL(read_failed).
+*
+*    IF read_failed IS NOT INITIAL AND entities_ref IS NOT BOUND.
+*      RETURN.
+*    ENDIF.
+*
+*    ASSIGN entities_ref->* TO <entities>.
+*
+*    IF lines( <entities> ) = 0.
+*      RETURN.
+*    ENDIF.
+*
+*
+*    " RETRIEVE WHICH FIELDS ARE MANDATORY BASED ON BDEF AND GET_INSTANCE_FEATURES()
+*    DATA(permission_keys_ref) = cl_abap_behvdescr=>create_data( p_name = entity_name
+*                                                                p_op   = cl_abap_behvdescr=>op_permission
+*                                                                p_kind = if_abap_behv=>typekind-import ).
+*
+*    ASSIGN permission_keys_ref->* TO <permission_keys>.
+*    MOVE-CORRESPONDING keys TO <permission_keys>.
+*
+*    DATA(permission_request_ref) = cl_abap_behvdescr=>create_data( p_name = entity_name
+*                                                                   p_op   = cl_abap_behvdescr=>op_permission
+*                                                                   p_kind = if_abap_behv=>typekind-request ).
+*
+*    ASSIGN permission_request_ref->(cl_abap_behv=>co_techfield_name-field) TO FIELD-SYMBOL(<%field>).
+*    LOOP AT components INTO field_name.
+*      <%field>-(field_name-name) = if_abap_behv=>mk-on.
+*    ENDLOOP.
+*
+*    DATA(permission_results_ref) = cl_abap_behvdescr=>create_data( p_name = entity_name
+*                                                                   p_op   = cl_abap_behvdescr=>op_permission
+*                                                                   p_kind = if_abap_behv=>typekind-result ).
+*
+*    DATA(permission_reads) = VALUE abp_behv_permissions_tab( ( entity_name = entity_name
+*                                                               instances   = REF data( <permission_keys> )
+*                                                               request     = permission_request_ref
+*                                                               results     = permission_results_ref ) ).
+*
+*    GET PERMISSIONS ONLY INSTANCE FEATURES OPERATIONS permission_reads
+*        FAILED FINAL(failed_permission)
+*        REPORTED FINAL(reported_permission).
+*
+*    IF failed_permission IS NOT INITIAL AND permission_results_ref IS NOT BOUND.
+*      RETURN.
+*    ENDIF.
+*
+*    ASSIGN permission_results_ref->* TO FIELD-SYMBOL(<permission_results>).
+*
+*    IF lines( <permission_results>-(cl_abap_behv=>co_techfield_name-instances) ) = 0.
+*      RETURN.
+*    ENDIF.
+*
+*    ASSIGN COMPONENT cl_abap_behv=>co_techfield_name-global OF STRUCTURE <permission_results> TO FIELD-SYMBOL(<global>).
+*    ASSIGN COMPONENT cl_abap_behv=>co_techfield_name-instances OF STRUCTURE <permission_results> TO <instance_permissions>.
+*
+*    DATA(where) = |%tky = <%tky>|.
+*
+*    " PROCESS PERMISSION REQUEST RESULTS
+*    LOOP AT <instance_permissions> ASSIGNING FIELD-SYMBOL(<instance_permission>).
+*      " Wipe state area
+*
+*      " IF <instance_permission>-(cl_abap_behv=>co_techfield_name-is_draft) = if_abap_behv=>mk-on.
+*      APPEND INITIAL LINE TO reported_entity ASSIGNING FIELD-SYMBOL(<reported>).
+*      <reported>-(cl_abap_behv=>co_techfield_name-tky) = <instance_permission>-(cl_abap_behv=>co_techfield_name-tky).
+*      <reported>-(cl_abap_behv=>co_techfield_name-state_area) = co_state_area.
+*      " ENDIF.
+*
+*      " Find corresponding entity instance we read in mass previously
+*      ASSIGN COMPONENT cl_abap_behv=>co_techfield_name-tky OF STRUCTURE <instance_permission> TO FIELD-SYMBOL(<%tky>).
+*
+*      LOOP AT <entities> ASSIGNING FIELD-SYMBOL(<entity>)
+*           WHERE (where).
+*        EXIT.
+*      ENDLOOP.
+*
+*      " Check if mandatory field is maintained
+*      LOOP AT components INTO DATA(perm_request_field).
+*        IF NOT (     (    <instance_permission>-(cl_abap_behv=>co_techfield_name-field)-(perm_request_field-name) = if_abap_behv=>fc-f-mandatory
+*                       OR <permission_results>-(cl_abap_behv=>co_techfield_name-global)-(cl_abap_behv=>co_techfield_name-field)-(perm_request_field-name) = if_abap_behv=>fc-f-mandatory )
+*                 AND <entity>-(perm_request_field-name) IS INITIAL ).
+*          CONTINUE.
+*        ENDIF.
+*
+*        APPEND INITIAL LINE TO failed_entity ASSIGNING FIELD-SYMBOL(<failed>).
+*        <failed>-(cl_abap_behv=>co_techfield_name-tky) = <instance_permission>-(cl_abap_behv=>co_techfield_name-tky).
+*
+*        " TODO: Ensure You have a proper Data Element with proper Medium Label or @EndUserText.label annotation defined
+**        DATA(label) = cl_dd_ddl_annotation_service=>get_label_4_element_mde(
+**                          entityname  = entity_name
+**                          elementname = CONV #( perm_request_field-name ) ).
+*
+*        DATA(label) = ''.
+*
+*        APPEND INITIAL LINE TO reported_entity ASSIGNING <reported>.
+*        <reported>-(cl_abap_behv=>co_techfield_name-tky) = <instance_permission>-(cl_abap_behv=>co_techfield_name-tky).
+*        <reported>-(cl_abap_behv=>co_techfield_name-state_area) = co_state_area.
+*        <reported>-(cl_abap_behv=>co_techfield_name-element)-(perm_request_field-name) = if_abap_behv=>mk-on.
+*
+*        ASSIGN COMPONENT cl_abap_behv=>co_techfield_name-path OF STRUCTURE <reported> TO FIELD-SYMBOL(<%path>).
+*        IF sy-subrc = 0.
+*          " Child entity.
+*          fill_path( EXPORTING i_entity_name = entity_name
+*                               i_instance    = <entity>
+*                     CHANGING  c_path        = <reported>-(cl_abap_behv=>co_techfield_name-path) ).
+*        ENDIF.
+*
+*        " In case the field label could not be determined, we say "Field is mandatory"
+*        "TODO: IF label-value IS INITIAL.
+*        IF label IS INITIAL.
+*          <reported>-(cl_abap_behv=>co_techfield_name-msg) = NEW zcm_sapdev_rap(
+*              textid = zcm_sapdev_rap=>mandatory_field_no_label ).
+*        ELSE.
+*          <reported>-(cl_abap_behv=>co_techfield_name-msg) = NEW zcm_sapdev_rap(
+*                                                                     textid     = zcm_sapdev_rap=>mandatory_field
+*                                                                     field_name = CONV #( label ) ).
+*                                                                     "TODO:field_name = CONV #( label-value ) ).
+*        ENDIF.
+*      ENDLOOP.
+*
+*    ENDLOOP.
+  ENDMETHOD.
