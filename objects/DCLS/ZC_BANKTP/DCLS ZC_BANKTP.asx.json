@@ -1,0 +1,60 @@
+[
+ {
+  "table":"ACMDCLSRC",
+  "data":
+  [
+   {
+    "DCLNAME":"ZC_BANKTP",
+    "AS4LOCAL":"A",
+    "AS4USER":"SAP_CUSTOMER",
+    "AS4DATE":"2025-09-01",
+    "AS4TIME":"09:49:18",
+    "SOURCE":"@EndUserText.label: 'ZC_BANKTP'\r\n@MappingRole: true\r\ndefine role ZC_BANKTP {\r\n  grant select on ZC_BANKTP\r\n  where INHERITING CONDITIONS FROM ENTITY I_BANKTP REPLACING { ROOT WITH _BaseEntity };\r\n}",
+    "PARENTNAME":"",
+    "ABAP_LANGUAGE_VERSION":"5"
+   }
+  ]
+ },
+ {
+  "table":"ACMDCLSRCT",
+  "data":
+  [
+   {
+    "DCLNAME":"ZC_BANKTP",
+    "DCLLANGUAGE":"E",
+    "AS4LOCAL":"A",
+    "DDTEXT":"Access Control for ZC_BANKTP"
+   }
+  ]
+ },
+ {
+  "table":"TADIR",
+  "data":
+  [
+   {
+    "PGMID":"R3TR",
+    "OBJECT":"DCLS",
+    "OBJ_NAME":"ZC_BANKTP",
+    "KORRNUM":"",
+    "SRCSYSTEM":"...",
+    "AUTHOR":"SAP_CUSTOMER",
+    "SRCDEP":"",
+    "DEVCLASS":"ZSAPDEV_RAP_SAMPLE_CODEGEN",
+    "GENFLAG":"",
+    "EDTFLAG":"",
+    "CPROJECT":" S",
+    "MASTERLANG":"E",
+    "VERSID":"",
+    "PAKNOCHECK":"",
+    "OBJSTABLTY":"",
+    "COMPONENT":"ZSAPDEV",
+    "CRELEASE":"100",
+    "DELFLAG":"",
+    "TRANSLTTXT":"",
+    "CREATED_ON":"2025-08-27",
+    "CHECK_DATE":"2025-08-27",
+    "CHECK_CFG":""
+   }
+  ]
+ }
+]
