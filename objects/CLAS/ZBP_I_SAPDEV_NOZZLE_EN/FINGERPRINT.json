@@ -1,0 +1,46 @@
+{
+ "fingerprints":
+ [
+  {
+   "name":"CINC ZBP_I_SAPDEV_NOZZLE_EN========CCAU.abap",
+   "fingerprint":"gICoIAJgC42+n+YLoUw0kd0ASfflShWuWZu4scnbIvkGXHHVOUifZl3oYCJPSAly5Lo6n0igoMYAPERuRRsGIA=="
+  },
+  {
+   "name":"CINC ZBP_I_SAPDEV_NOZZLE_EN========CCDEF.abap",
+   "fingerprint":"OKOgSKQTQqkbbUdY6RKzdA3ibD28BTN3ojsEC4Wf5b+GR6/Ap8xqnoajS37RgrdwotFNbIOMUfQ0lUIc1l1m3w=="
+  },
+  {
+   "name":"CINC ZBP_I_SAPDEV_NOZZLE_EN========CCIMP.abap",
+   "fingerprint":"bXwWiDlXfurXxnCwgoSd0N3dYC6eGXoiS0q9uinPbFI5lDKjFSiiEn2MCPmSjtxeXlxebphHPAqLmSH5OI/QqA=="
+  },
+  {
+   "name":"CINC ZBP_I_SAPDEV_NOZZLE_EN========CCMAC.abap",
+   "fingerprint":"xIr9VkpTyS8q8tJ/orNfCdn6lzHItgj8D+5s2wWgEL966R6iDiaCw/az+xeugF+EcXmZ+D9+RfaSUGDBoNM1MA=="
+  },
+  {
+   "name":"CLAS ZBP_I_SAPDEV_NOZZLE_EN.asx.json",
+   "fingerprint":"fHtuvvLasUBwVz1sEPPLJYgT8b5Xm3JJaNtSjXpXQsVHweVxjQ5lkvSD4OhF4KEYfe41Uc9k+5kTAtnV5t5XOQ=="
+  },
+  {
+   "name":"CLSD ZBP_I_SAPDEV_NOZZLE_EN.abap",
+   "fingerprint":"8kDMEs0HOxXqAUF2QDLQDqNYr1JqPbVMcD5CCPQWdY4MBY/pnQgRaxMC3RqK6fctLXC7ZYN2ZPQ1eKab5oBsyQ=="
+  },
+  {
+   "name":"CPRI ZBP_I_SAPDEV_NOZZLE_EN.abap",
+   "fingerprint":"/NuMLy6YxVSHA4bdWHjz6kuhrSFDnnv1R0Ypya2AAm1jrYfIldBvQNy3x+48zlOF8GQETl7y12svtgDxeIcdsw=="
+  },
+  {
+   "name":"CPRO ZBP_I_SAPDEV_NOZZLE_EN.abap",
+   "fingerprint":"CflnBefR5qdHiP8mqzTmp7pdR+vWAMywNMa3rDjvBeCWs3s0Bymw2dleRXbcjXvEPxj+x6OwAy52SSQRBB7RPg=="
+  },
+  {
+   "name":"CPUB ZBP_I_SAPDEV_NOZZLE_EN.abap",
+   "fingerprint":"5mtpnuVLbAivfRW51GdJudlD9Wf6lOf4pGuhvvYuV9b16Um9hSBVERzIh1W35UtAj/xQDKKxuHqtiqm6M2Ez0Q=="
+  },
+  {
+   "name":"REPS ZBP_I_SAPDEV_NOZZLE_EN========CT.abap",
+   "fingerprint":"wj3rhF5FLP8fPr+oDH0OpOk+f+ydHCzPRzC5bsH0KkGI847KlJ0jQVe/ErAAui9ge6YW+TZ6v/YS8H0x71M7kw=="
+  }
+ ],
+ "fingerprintAll":"7EU4YT1rcttZzUKSKpZTBxEWf2xxw/64AeQ35xGN1ni/a/a0cFHjoby3mpUVDWKGWwlwoNH/R8bkS3a+WQpVaA=="
+}

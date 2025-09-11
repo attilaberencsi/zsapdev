@@ -1,0 +1,22 @@
+{
+ "fingerprints":
+ [
+  {
+   "name":"INTF ZIF_SAPDEV_RAP_MANAGED_BASE.asx.json",
+   "fingerprint":"PR5RV0MuqPL0j/232SnE+/EIqkb7NxRob4QSeqyw805HpyM99nSb86OpHOvK8qilAHVNDowoIP1aklFp6rXFQg=="
+  },
+  {
+   "name":"REPS ZIF_SAPDEV_RAP_MANAGED_BASE===IP.abap",
+   "fingerprint":"qtJ8sBzTTKPlMU1DBP3hABZRDULsDc0ZuxxHIZLcsEGU2ElbCV08VYt2VQ5yEe+W53gLk14x9RCb6aSBh3RYvQ=="
+  },
+  {
+   "name":"REPS ZIF_SAPDEV_RAP_MANAGED_BASE===IT.abap",
+   "fingerprint":"QMk0kLWbZxdPT+YUNRmbSknfA6EIEEaMDustOLFhfQOnIMMfyEbUI8pzJ0J4/ESFNARgLGsUNYSHHB4NLUWd7Q=="
+  },
+  {
+   "name":"REPS ZIF_SAPDEV_RAP_MANAGED_BASE===IU.abap",
+   "fingerprint":"h4AZW6ccmr+C5RwlKe8268MqLjwkstyhbLqzRDJ4eaIDQDPmzcrBe9G2c9n+4rGDbjyUsisgTOtRZnXCF1raWw=="
+  }
+ ],
+ "fingerprintAll":"gGyisc8ojIWp5Ri+qckm/xcBvWQdt6fDZYxhYEPuOd7DNTLzjTdkY0R3AdroNdVX7zhPDN2m8NfYqAZRKstUjw=="
+}

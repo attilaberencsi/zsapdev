@@ -7,9 +7,9 @@
     "SRVDNAME":"ZSAPDEV_3DP_UI_O4",
     "VERSION":"A",
     "CHANGED_BY":"SAP_CUSTOMER",
-    "CHANGED_ON":"2025-08-08",
-    "CHANGED_AT":"12:51:20",
-    "DT_UUID":"EE5DDB7701311FD09D8ACC265219EA70",
+    "CHANGED_ON":"2025-09-09",
+    "CHANGED_AT":"12:46:49",
+    "DT_UUID":"9AD1D2A13D561FD0A3AF61B0AFC741FF",
     "SOURCE_ORIGIN":"0",
     "SRVD_SOURCE_TYPE":"S",
     "ABAP_LANGUAGE_VERSION":"5"
@@ -35,7 +35,7 @@
    {
     "SRVDNAME":"ZSAPDEV_3DP_UI_O4",
     "VERSION":"A",
-    "SOURCE":"@EndUserText.label: '3D Printrers'\r\n@ObjectModel.leadingEntity.name: 'ZC_SAPDEV_3DPRINTER'\r\ndefine service ZSAPDEV_3DP_UI_O4\r\n  provider contracts odata_v4_ui {\r\n  expose ZC_SAPDEV_3DPrinter  as Printer;\r\n  expose ZC_SAPDEV_Nozzle     as Nozzle;\r\n  expose I_User               as User;\r\n  expose I_UnitOfMeasureStdVH as UoM;\r\n}"
+    "SOURCE":"@EndUserText.label: '3D Printers'\r\n@ObjectModel.leadingEntity.name: 'ZC_SAPDEV_3DPRINTER'\r\ndefine service ZSAPDEV_3DP_UI_O4\r\n  provider contracts odata_v4_ui {\r\n  expose ZC_SAPDEV_3DPrinter  as Printer;\r\n  expose ZC_SAPDEV_Nozzle     as Nozzle;\r\n  expose I_User               as User;\r\n  expose I_UnitOfMeasureStdVH as UoM;\r\n}"
    }
   ]
  },
@@ -46,7 +46,7 @@
    {
     "SRVDNAME":"ZSAPDEV_3DP_UI_O4",
     "NAME":"ENDUSERTEXT.LABEL",
-    "VALUE":"'3D Printrers'"
+    "VALUE":"'3D Printers'"
    },
    {
     "SRVDNAME":"ZSAPDEV_3DP_UI_O4",
@@ -63,7 +63,7 @@
     "SRVDNAME":"ZSAPDEV_3DP_UI_O4",
     "LANGUAGE":"E",
     "NAME":"ENDUSERTEXT.LABEL",
-    "TEXT":"3D Printrers"
+    "TEXT":"3D Printers"
    }
   ]
  },
@@ -128,8 +128,8 @@
     "SERVICE":"ZSAPDEV_3DP_UI_O4",
     "SERVICE_RAW":"ZSAPDEV_3DP_UI_O4",
     "SOURCE_TYPE":"S",
-    "DT_UUID":"EE5DDB7701311FD09D8ACC265219EA70",
-    "RT_HASH":"9B2B6CCCBB8C139D849C428F5BFF1309627E4C56",
+    "DT_UUID":"9AD1D2A13D561FD0A3AF61B0AFC741FF",
+    "RT_HASH":"B548748EFB03F520926227104E4BB4C085C84350",
     "GEN_VERSION":"0"
    }
   ]
