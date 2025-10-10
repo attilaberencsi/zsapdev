@@ -1,0 +1,50 @@
+{
+ "fingerprints":
+ [
+  {
+   "name":"CINC ZCL_SAPDEV_MODIFY_API_KEY=====CCAU.abap",
+   "fingerprint":"4BAMBYrNQvJ6LI+a1UH0NGFPiC7vZTjS7PrBdRL2tLEPjjFs+B9AykRwggH+UwVz69QHh30Y6tkCWVWaw+UAAg=="
+  },
+  {
+   "name":"CINC ZCL_SAPDEV_MODIFY_API_KEY=====CCDEF.abap",
+   "fingerprint":"cM4bJRgKV1BAWUYopQBolGITLkZvaXbUGGc3E8115lIxKIewUZCE7OU7iX3qnnwx8HT3xk2mzU/ZKgA+cA8LmQ=="
+  },
+  {
+   "name":"CINC ZCL_SAPDEV_MODIFY_API_KEY=====CCIMP.abap",
+   "fingerprint":"fTzq6/epVCf6dOvn9qm9Q+c+hjx5QIy+OzeNdmry+014Dz757/9EzzgYTTUNe+ez0xUAH8Uqs27rIuZD4km3Ug=="
+  },
+  {
+   "name":"CINC ZCL_SAPDEV_MODIFY_API_KEY=====CCMAC.abap",
+   "fingerprint":"ecjLspcBYmxeou0WCWWgMMmjDtYh/Rp33cfOXj1sS/Mgro2VRt4GSm/627A9pXeX+RozHt39gJ8p4MaELyV/nw=="
+  },
+  {
+   "name":"CLAS ZCL_SAPDEV_MODIFY_API_KEY.asx.json",
+   "fingerprint":"itvoKlDMpRMfUCCi26H2MUxcTFNWCBZ+D0QlfqTHDEDiv1pnILy28nvdJeMY56f50ODpcvpfMc2BHkw10yOOtg=="
+  },
+  {
+   "name":"CLSD ZCL_SAPDEV_MODIFY_API_KEY.abap",
+   "fingerprint":"E0bkxAyD8jgPftAkvyP2I398zgrZvJb8kLYUfwZVoFzwAwTN14vw3kQ0SQz7ERYIyBvVIRuSExxGlBuycsspiA=="
+  },
+  {
+   "name":"CPRI ZCL_SAPDEV_MODIFY_API_KEY.abap",
+   "fingerprint":"u5xG3At/CGRYbRv99UvF8Kc8MBn5elewr7vse0XyFPxEQAtvG1WM8jP3nENm5WS4I+Tr8rvUxuuXm2tIx4Apsw=="
+  },
+  {
+   "name":"CPRO ZCL_SAPDEV_MODIFY_API_KEY.abap",
+   "fingerprint":"q6VCNiKBfxPfrgIh7OOupJfVn5gbuvr97yXrSK96V0U53DaT9DvhCVg/A+yBwjHXVGqqu10CiE56v0imD1JDUA=="
+  },
+  {
+   "name":"CPUB ZCL_SAPDEV_MODIFY_API_KEY.abap",
+   "fingerprint":"kKBCRYl6tNPm4tsGHFByA076RR+ziJ9y51NEdl/Vr4PxwjBekVO/HB+QLWlQKuePusda52rT5qyvK8DmCDpcNA=="
+  },
+  {
+   "name":"METH IF_OO_ADT_CLASSRUN~MAIN.abap",
+   "fingerprint":"ulkXXtnMAwKW4HRv1me+UCeafIRFfR0TH1633+uXF2NL7m00zTy+LdhDQETXVcQnlDkTvPhZhJzzDRlOGWeuEA=="
+  },
+  {
+   "name":"REPS ZCL_SAPDEV_MODIFY_API_KEY=====CT.abap",
+   "fingerprint":"iaz0lYR+MJG5HyCBBTSO5HHWEpmzso9BkyD1Mz6DJs+d3dNvTqPN+XgVajH5Iq3KRGkw+dBZWp/ruYbCRT0iag=="
+  }
+ ],
+ "fingerprintAll":"mm/TkPX67EK8SecKePlVE4wUeBv/6S+mAW+o848unD7X7TdypEpOSlpmdZf+1j0OU96uI437nQGu5wEq/GAEhw=="
+}
