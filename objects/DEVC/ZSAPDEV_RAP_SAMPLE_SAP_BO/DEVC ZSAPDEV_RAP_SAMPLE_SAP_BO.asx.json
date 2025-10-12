@@ -46,7 +46,7 @@
     "NAMESPACE":"/0CUST/",
     "TPCLASS":"X",
     "SHIPMENT":"",
-    "PARENTCL":"ZSAPDEV_RAP_SAMPLE",
+    "PARENTCL":"ZSAPDEV",
     "APPLICAT":"",
     "ERRSEVRTY":"",
     "PERMINHER":"",
@@ -57,7 +57,7 @@
     "CREATED_BY":"SAP_CUSTOMER",
     "CREATED_ON":"2025-10-10",
     "CHANGED_BY":"SAP_CUSTOMER",
-    "CHANGED_ON":"2025-10-10",
+    "CHANGED_ON":"2025-10-12",
     "SRV_CHECK":"",
     "CLI_CHECK":"",
     "EXT_ALIAS":"",
@@ -87,7 +87,7 @@
    {
     "DEVCLASS":"ZSAPDEV_RAP_SAMPLE_SAP_BO",
     "SPRAS":"E",
-    "CTEXT":"#Generated RAP  tutorial package"
+    "CTEXT":"#Generated   tutorial package"
    }
   ]
  }
