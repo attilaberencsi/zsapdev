@@ -8,8 +8,8 @@
     "VERSION":"A",
     "CHANGED_BY":"SAP_CUSTOMER",
     "CHANGED_ON":"2025-10-12",
-    "CHANGED_AT":"07:25:42",
-    "UUID":"AABF41CD45AE1FD0A9E7951BA35443E1",
+    "CHANGED_AT":"13:14:07",
+    "UUID":"FEDE7FA870681FD0A9EDAA9F6397EDC8",
     "ABAP_LANGUAGE_VERSION":"5"
    }
   ]
@@ -34,7 +34,7 @@
     "DDLXNAME":"ZC_SHOPTP_B",
     "VERSION":"A",
     "UUID":"",
-    "SOURCE":"@Metadata.layer: #CUSTOMER\r\n@UI: {\r\n  headerInfo: {\r\n    typeName: 'Shop', \r\n    typeNamePlural: 'Shops', \r\n    title: {\r\n      type: #STANDARD, \r\n      label: 'Shop', \r\n      value: 'OrderID'\r\n    }\r\n  }, \r\n  presentationVariant: [ {\r\n    sortOrder: [ {\r\n      by: 'OrderID', \r\n      direction: #DESC\r\n    } ], \r\n    visualizations: [ {\r\n      type: #AS_LINEITEM\r\n    } ]\r\n  } ]\r\n}\r\nannotate view ZC_ShopTP_B with\r\n{\r\n  @UI.facet: [ {\r\n    id: 'idCollection', \r\n    type: #COLLECTION, \r\n    label: 'Shop', \r\n    position: 10 \r\n  }, \r\n  {\r\n    id: 'idIdentification', \r\n    parentId: 'idCollection', \r\n    type: #IDENTIFICATION_REFERENCE, \r\n    label: 'General Information', \r\n    position: 10 \r\n  } ]\r\n  @UI.hidden: true\r\n  OrderUUID;\r\n  \r\n  @UI.lineItem: [ {\r\n    position: 20 , \r\n    importance: #HIGH, \r\n    label: 'OrderID'\r\n  } ]\r\n  @UI.identification: [ {\r\n    position: 20 , \r\n    label: 'OrderID'\r\n  } ]\r\n  @UI.selectionField: [ {\r\n    position: 20 \r\n  } ]\r\n  OrderID;\r\n  \r\n  @UI.lineItem: [ {\r\n    position: 30 , \r\n    importance: #HIGH, \r\n    label: 'OrderedItem'\r\n  } ]\r\n  @UI.identification: [ {\r\n    position: 30 , \r\n    label: 'OrderedItem'\r\n  } ]\r\n  @UI.selectionField: [ {\r\n    position: 30 \r\n  } ]\r\n  OrderedItem;\r\n  \r\n  @UI.selectionField: [ {\r\n    position: 40 \r\n  } ]\r\n  CurrencyCode;\r\n  \r\n  @UI.lineItem: [ {\r\n    position: 50 , \r\n    importance: #HIGH, \r\n    label: 'OrderItemPrice'\r\n  } ]\r\n  @UI.identification: [ {\r\n    position: 50 , \r\n    label: 'OrderItemPrice'\r\n  } ]\r\n  OrderItemPrice;\r\n  \r\n  @UI.lineItem: [ {\r\n    position: 60 , \r\n    importance: #HIGH, \r\n    label: 'DeliveryDate'\r\n  } ]\r\n  @UI.identification: [ {\r\n    position: 60 , \r\n    label: 'DeliveryDate'\r\n  } ]\r\n  DeliveryDate;\r\n  \r\n  @UI.lineItem: [ {\r\n    position: 70 , \r\n    importance: #HIGH, \r\n    label: 'OverallStatus'\r\n  } ]\r\n  @UI.identification: [ {\r\n    position: 70 , \r\n    label: 'OverallStatus'\r\n  } ]\r\n  OverallStatus;\r\n  \r\n  @UI.lineItem: [ {\r\n    position: 80 , \r\n    importance: #HIGH, \r\n    label: 'Notes'\r\n  } ]\r\n  @UI.identification: [ {\r\n    position: 80 , \r\n    label: 'Notes'\r\n  } ]\r\n  Notes;\r\n  \r\n  @UI.hidden: true\r\n  LastChangedAt;\r\n  \r\n  @UI.hidden: true\r\n  CreatedBy;\r\n  \r\n  @UI.hidden: true\r\n  CreatedAt;\r\n  \r\n  @UI.hidden: true\r\n  LocalLastChangedBy;\r\n  \r\n  @UI.hidden: true\r\n  LastChangedBy;\r\n  \r\n  @UI.hidden: true\r\n  LocalLastChangedAt;\r\n}"
+    "SOURCE":"@Metadata.layer: #CORE\r\n@UI: {\r\n  headerInfo: {\r\n    typeName: 'Shop',\r\n    typeNamePlural: 'Shops',\r\n    title: {\r\n      type: #STANDARD,\r\n      label: 'Shop',\r\n      value: 'OrderID'\r\n    }\r\n  },\r\n  presentationVariant: [ {\r\n    sortOrder: [ {\r\n      by: 'OrderID',\r\n      direction: #DESC\r\n    } ],\r\n    visualizations: [ {\r\n      type: #AS_LINEITEM\r\n    } ]\r\n  } ]\r\n}\r\nannotate view ZC_ShopTP_B with\r\n{\r\n  @UI.facet: [ {\r\n    id: 'idCollection',\r\n    type: #COLLECTION,\r\n    label: 'Shop',\r\n    position: 10\r\n  },\r\n  {\r\n    id: 'idIdentification',\r\n    parentId: 'idCollection',\r\n    type: #IDENTIFICATION_REFERENCE,\r\n    label: 'General Information',\r\n    position: 10\r\n  } ]\r\n  @UI.hidden: true\r\n  OrderUUID;\r\n\r\n  @UI.lineItem: [ {\r\n    position: 20 ,\r\n    importance: #HIGH,\r\n    label: 'OrderID'\r\n  } ]\r\n  @UI.identification: [ {\r\n    position: 20 ,\r\n    label: 'OrderID'\r\n  } ]\r\n  @UI.selectionField: [ {\r\n    position: 20\r\n  } ]\r\n  OrderID;\r\n\r\n  @UI.lineItem: [ {\r\n    position: 30 ,\r\n    importance: #HIGH,\r\n    label: 'OrderedItem'\r\n  } ]\r\n  @UI.identification: [ {\r\n    position: 30 ,\r\n    label: 'OrderedItem'\r\n  } ]\r\n  @UI.selectionField: [ {\r\n    position: 30\r\n  } ]\r\n  OrderedItem;\r\n\r\n  @UI.selectionField: [ {\r\n    position: 40\r\n  } ]\r\n  CurrencyCode;\r\n\r\n  @UI.lineItem: [ {\r\n    position: 50 ,\r\n    importance: #HIGH,\r\n    label: 'OrderItemPrice'\r\n  } ]\r\n  @UI.identification: [ {\r\n    position: 50 ,\r\n    label: 'OrderItemPrice'\r\n  } ]\r\n  OrderItemPrice;\r\n\r\n  @UI.lineItem: [ {\r\n    position: 60 ,\r\n    importance: #HIGH,\r\n    label: 'DeliveryDate'\r\n  } ]\r\n  @UI.identification: [ {\r\n    position: 60 ,\r\n    label: 'DeliveryDate'\r\n  } ]\r\n  DeliveryDate;\r\n\r\n  @UI.lineItem: [ {\r\n    position: 70 ,\r\n    importance: #HIGH,\r\n    label: 'OverallStatus'\r\n  } ]\r\n  @UI.identification: [ {\r\n    position: 70 ,\r\n    label: 'OverallStatus'\r\n  } ]\r\n  OverallStatus;\r\n\r\n  @UI.lineItem: [ {\r\n    position: 80 ,\r\n    importance: #HIGH,\r\n    label: 'Notes'\r\n  } ]\r\n  @UI.identification: [ {\r\n    position: 80 ,\r\n    label: 'Notes'\r\n  } ]\r\n  Notes;\r\n\r\n  @UI.hidden: true\r\n  LastChangedAt;\r\n\r\n  @UI.hidden: true\r\n  CreatedBy;\r\n\r\n  @UI.hidden: true\r\n  CreatedAt;\r\n\r\n  @UI.hidden: true\r\n  LocalLastChangedBy;\r\n\r\n  @UI.hidden: true\r\n  LastChangedBy;\r\n\r\n  @UI.hidden: true\r\n  LocalLastChangedAt;\r\n}"
    }
   ]
  },
@@ -576,9 +576,9 @@
     "DDLXNAME":"ZC_SHOPTP_B",
     "EXTENDED_ARTIFACT":"ZC_SHOPTP_B",
     "VARIANT":"",
-    "LAYER":5500,
-    "DT_UUID":"AABF41CD45AE1FD0A9E7951BA35443E1",
-    "RT_HASH":"BB8559A23C8F2F94FB40DAA8112994641FE59F1D",
+    "LAYER":1500,
+    "DT_UUID":"FEDE7FA870681FD0A9EDAA9F6397EDC8",
+    "RT_HASH":"D850E519A482CEB3CE78894F950F84DB74DEB2AB",
     "GEN_VERSION":"0",
     "TYPE":"0"
    }
