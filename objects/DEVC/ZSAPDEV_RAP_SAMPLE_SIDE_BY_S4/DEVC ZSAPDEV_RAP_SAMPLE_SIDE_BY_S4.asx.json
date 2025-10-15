@@ -6,12 +6,12 @@
    {
     "PGMID":"R3TR",
     "OBJECT":"DEVC",
-    "OBJ_NAME":"ZSAPDEV_RAP_SAMPLE_CODEGEN",
+    "OBJ_NAME":"ZSAPDEV_RAP_SAMPLE_SIDE_BY_S4",
     "KORRNUM":"",
     "SRCSYSTEM":"...",
     "AUTHOR":"SAP_CUSTOMER",
     "SRCDEP":"",
-    "DEVCLASS":"ZSAPDEV_RAP_SAMPLE_CODEGEN",
+    "DEVCLASS":"ZSAPDEV_RAP_SAMPLE_SIDE_BY_S4",
     "GENFLAG":"",
     "EDTFLAG":"",
     "CPROJECT":" S",
@@ -23,8 +23,8 @@
     "CRELEASE":"100",
     "DELFLAG":"",
     "TRANSLTTXT":"",
-    "CREATED_ON":"2025-08-27",
-    "CHECK_DATE":"2025-08-27",
+    "CREATED_ON":"2025-10-15",
+    "CHECK_DATE":"2025-10-15",
     "CHECK_CFG":""
    }
   ]
@@ -34,7 +34,7 @@
   "data":
   [
    {
-    "DEVCLASS":"ZSAPDEV_RAP_SAMPLE_CODEGEN",
+    "DEVCLASS":"ZSAPDEV_RAP_SAMPLE_SIDE_BY_S4",
     "INTSYS":"",
     "CONSYS":"",
     "CTEXT":"",
@@ -55,7 +55,7 @@
     "RESTRICTED":"",
     "MAINPACK":"",
     "CREATED_BY":"SAP_CUSTOMER",
-    "CREATED_ON":"2025-08-27",
+    "CREATED_ON":"2025-10-15",
     "CHANGED_BY":"SAP_CUSTOMER",
     "CHANGED_ON":"2025-10-15",
     "SRV_CHECK":"",
@@ -85,9 +85,9 @@
   "data":
   [
    {
-    "DEVCLASS":"ZSAPDEV_RAP_SAMPLE_CODEGEN",
+    "DEVCLASS":"ZSAPDEV_RAP_SAMPLE_SIDE_BY_S4",
     "SPRAS":"E",
-    "CTEXT":"BAS-RAP UI Service Generation #UI_PROVIDER_PROJECTION_SOURCE"
+    "CTEXT":"S/4HANA Side By Side Extension on Steampunk"
    }
   ]
  }
