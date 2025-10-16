@@ -1,0 +1,58 @@
+{
+ "fingerprints":
+ [
+  {
+   "name":"CINC ZCL_SAPDEV_PRODCLAS_READ======CCAU.abap",
+   "fingerprint":"ppownAf389gJdFk70+NkLnAG/l29xTla2WopaZlYdIv58ePWuGQfBFT4LkJcZeA6z57xrUMg3AT9auYIL7MTJw=="
+  },
+  {
+   "name":"CINC ZCL_SAPDEV_PRODCLAS_READ======CCDEF.abap",
+   "fingerprint":"XN7bgwGRcA05W6YsisfWiWCO1ta8qNJNXrYqCAvUmKvQL1MmHPhvQ99m38k/qWVKJDQutwY1JtWt+YcyBkviQg=="
+  },
+  {
+   "name":"CINC ZCL_SAPDEV_PRODCLAS_READ======CCIMP.abap",
+   "fingerprint":"4ArIlw0z9J/lsRWoCyyAWElTm5V7QZcd4oX2gd/2FV4dIILyVVL1uMRWQ4/5Bg+W+CNG4NgF9ThCN6zgJJ38Gg=="
+  },
+  {
+   "name":"CINC ZCL_SAPDEV_PRODCLAS_READ======CCMAC.abap",
+   "fingerprint":"0k6/hZrZT/ylb/j5iYtd3AZYA/1WFbC4Otg3cpMKDa6VWlgMMoF+zYC/EmFx2Hwf9/QafWkFn+D4GOALuTBWFw=="
+  },
+  {
+   "name":"CLAS ZCL_SAPDEV_PRODCLAS_READ.asx.json",
+   "fingerprint":"CoglDH95+cWTvAURakD+EGHvg5hJCg0RSvDx1iwsWwVhj9b+wB+J0V0Q7SNv1aGja7f54fH6sthbTirKdZm/qQ=="
+  },
+  {
+   "name":"CLSD ZCL_SAPDEV_PRODCLAS_READ.abap",
+   "fingerprint":"R4xGN6X/Qls52yfZNT49isjHPcLrpifV5qRPcC0/Jwp83VuPLJ47IUBr+9FbZQVSghJVc6GJZRrF3DNf8kyIbg=="
+  },
+  {
+   "name":"CPRI ZCL_SAPDEV_PRODCLAS_READ.abap",
+   "fingerprint":"j+heQzVXZG7D2b9kGyeaqZucCwUMm63qquEnFCbmL6tXlzjGKtbXVXb9tSDraelAoG2K7291LeRhTbRhMF/EyQ=="
+  },
+  {
+   "name":"CPRO ZCL_SAPDEV_PRODCLAS_READ.abap",
+   "fingerprint":"1mZqjzSLDziu23pDgcCPVd0JG2Lv8/3BkrXTo8AbE3PzRIanj4TxGV89P6quL1dW9qizqPT+HeSeGW1/f0JuVg=="
+  },
+  {
+   "name":"CPUB ZCL_SAPDEV_PRODCLAS_READ.abap",
+   "fingerprint":"lJxc51SJCq6UPIBkAD3LI/8LOFgZI58DJYeieTIlyPFtHdGzL/zIVDnIl5+X6xt8W5jGV+GkJCKkrFJeZveXbw=="
+  },
+  {
+   "name":"METH GET_PRODUCTS.abap",
+   "fingerprint":"iAWcaHeNYvlORvV/QUddH++zWDbf+FCuAVtgsr4/gGHy44oFJ4M/XybTBaa0MmFOHsJwawe7MDBxD7SZRLK+Ng=="
+  },
+  {
+   "name":"METH IF_OO_ADT_CLASSRUN~MAIN.abap",
+   "fingerprint":"8LditP6tnypT8EAXvd8JjViUQGxQNrDeGZEC93grxATpGYVqGw7loiuBK+XSXe2WxeXW+zyrzcRdjuF5JtZjOA=="
+  },
+  {
+   "name":"METH IF_RAP_QUERY_PROVIDER~SELECT.abap",
+   "fingerprint":"ztkRYatymlvEZLylV23icQo/6Rn0TwMM67ipMr2cX+i9qjz8svD6kWwFpzVvlzD5moi1rwbVFinzF8C1HzQwsQ=="
+  },
+  {
+   "name":"REPS ZCL_SAPDEV_PRODCLAS_READ======CT.abap",
+   "fingerprint":"DDSoQkgnpAN/QNG2PfDKeU+fdq+0BNvBQpXOFGulUjiVlZC9513oI1NZ0LHWa16PNapzEEGwBkC5+yNN4r3cAw=="
+  }
+ ],
+ "fingerprintAll":"km/oKdv3sF0wRrk7EKuioi7YGKn9zTlTep2+o2scDCX0EKVx/f8VSjr6Fh0v3OY60D8m31NPJdCM1L5XsO/wcA=="
+}

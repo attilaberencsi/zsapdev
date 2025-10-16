@@ -1,0 +1,94 @@
+{
+ "fingerprints":
+ [
+  {
+   "name":"CLAS ZSC_API_CLFN_PRODUCT.asx.json",
+   "fingerprint":"TgUOL5RKPGk4ryEqnn4onfECyH3N3SJLiD7OjvTr/OC47cM5Ji1hic395hoO/PRBnETWtwlGX8HQkrX11dY0gw=="
+  },
+  {
+   "name":"CLSD ZSC_API_CLFN_PRODUCT.abap",
+   "fingerprint":"HirE3JBklzC8ZsKy1GxECml4KtQym1ZB+hnMkgJjWzDdVRRy0bjAqeeKXNzY7NLXI9ErvTPhpzwZ0VFwfRaADA=="
+  },
+  {
+   "name":"CPRI ZSC_API_CLFN_PRODUCT.abap",
+   "fingerprint":"WOxb4ucMR2HIsWN8whTao5GCAURRfmPNdm9r+t8sBpqzfEXY3/8bKsMqWT7zJd46Ae1xIKfEREgIw8t99QXtOw=="
+  },
+  {
+   "name":"CPRO ZSC_API_CLFN_PRODUCT.abap",
+   "fingerprint":"KSekNtwSAX2/IJRpg7qH5Yf65MEK47HX+4VIV45iDIyX9Yy/ivVi8QQOZ6DF606Kg1iVdqHjokl41iEjcRS2Lg=="
+  },
+  {
+   "name":"CPUB ZSC_API_CLFN_PRODUCT.abap",
+   "fingerprint":"6LGTHk/ZlUX5fMzFDK8m5d5nXWwCqox692G3QQbMFLe+udyLOHlK4WSsPH5vAu5Mc9mTSgaTpViYdzK0L3mD3Q=="
+  },
+  {
+   "name":"METH /IWBEP/IF_V4_MP_BASIC_PM~DEFINE.abap",
+   "fingerprint":"LlzUhW7e0GnsfcJSh3xJYsUTXKXjCdz2FCgLd+/w198pYWsb7u63ScLyXtzgRnpfHAvAcp4h5sFAY/uqULXBWg=="
+  },
+  {
+   "name":"METH DEF_A_CLFN_CLASS_FOR_KEY_DAT_2.abap",
+   "fingerprint":"zihOYnZsaZtRJaQKHpoCZWgqpQq7d+TV6EYxJyi/2qIYGzZOBHjUOAYeuACxTG46PDSdHkSuP4WQV33f64hwNg=="
+  },
+  {
+   "name":"METH DEF_A_CLFN_PRODUCT_TYPE.abap",
+   "fingerprint":"l0fqnYCE0nDIBjRU+5p7gr8Bpyy0FADrhGXdjGGQGrZVAxZP6gDhDiTed4oqvdUWGV206OaIv5CPRhfCKqtgZw=="
+  },
+  {
+   "name":"METH DEF_A_PRODUCT_CHARC_TYPE.abap",
+   "fingerprint":"iO6AQRrTDYTzJO7dUP0M3Dt8eR2chItkjAITggph/OmfLahC/psIaKE1bBw19elPBb69jytTlQiUeHeyx5Gn9A=="
+  },
+  {
+   "name":"METH DEF_A_PRODUCT_CHARC_VALUE_TYPE.abap",
+   "fingerprint":"EydIKs2+m3fumnl4Ju6vPVksqrFv/x6xJn0R81w7H7RqDhAbspgQNTheWKpHnaHscc20NrTymbbBjXCsn2nAbQ=="
+  },
+  {
+   "name":"METH DEF_A_PRODUCT_CLASS_CHARC_TYPE.abap",
+   "fingerprint":"NEXlV7m7u1uYKoF44vhirm8H92saR9JJk9h48NMXGWML8Ty206Yl6qREiGxGHjz2yP0PnNbIEp8Wsx5hDIR9CQ=="
+  },
+  {
+   "name":"METH DEF_A_PRODUCT_CLASS_TYPE.abap",
+   "fingerprint":"Q2/GWEK0csWaaU23blNl5XI0n3we95U58wLO6V3Rmi7fN9Uv5HNUeRhKZ9i3HADTxSQxbGxw70xSOwNP8lKCEg=="
+  },
+  {
+   "name":"METH DEF_A_PRODUCT_DESCRIPTION_TYPE.abap",
+   "fingerprint":"iuf4leo2dsiUyGXNpV5eXZ6ilHaML2YECDnfbyYmDg9MRRhHhXw2IeaMklDOj+r6MleQ09l5AqRrzxkQnNp/xw=="
+  },
+  {
+   "name":"METH DEF_A_PRODUCT_PLANT_PROCUREM_2.abap",
+   "fingerprint":"9xH3Yo1v6jMtRtf+tbDFJnCMUTSgE8osVCWi1R/GO2V4dsb/S+q/nmHnxqkSvLo/12K9LRumcfcTIRBEoH9YgA=="
+  },
+  {
+   "name":"METH DEF_A_PRODUCT_PLANT_TYPE.abap",
+   "fingerprint":"SSlLZoPoDn//KYi2ulAKCA4g4WJ5yiHa3AUc+GOaXTJzA2Qq5KrmHlYEHmaQtBrcA7VaytQXJvXXhwAfgjk+jg=="
+  },
+  {
+   "name":"METH DEF_A_PRODUCT_SALES_DELIVERY_T.abap",
+   "fingerprint":"t/96YqHI6TcwFzj+QJ8c8+W/NTJCf+gUgeYV9FwiL/070Zi4tyo9zT9cZvMGDFtLJSp+aP8o2zdeufdI6udQ4Q=="
+  },
+  {
+   "name":"METH DEF_A_PRODUCT_SALES_TAX_TYPE.abap",
+   "fingerprint":"dwt7zDbCk96QPel1PiydPoq83u+TyjeGXS8qXeU6QYwZezAXTP9n4FMl0ECfmgQmVVPuFI1Xx2n0VUvKb1SAvw=="
+  },
+  {
+   "name":"METH DEF_A_PRODUCT_STORAGE_LOCATI_2.abap",
+   "fingerprint":"iZG1YsDmeDxorPdxVLDOm/xmAJRNksh9GBJAaf2gP+CVapfhea+3Rp7m481bf0kJR0BqZcjYni7Ekcsss4VndA=="
+  },
+  {
+   "name":"METH DEF_A_PRODUCT_SUPPLY_PLANNIN_2.abap",
+   "fingerprint":"P7j2okadyDIog6kBKEoeThPFSbgQ22u2DKKTYEU9i8Nb1RQjiiO8bPEcuWeWbdSZ6eFxBJVB5GyDLaih/1+4ug=="
+  },
+  {
+   "name":"METH DEF_A_PRODUCT_WORK_SCHEDULIN_2.abap",
+   "fingerprint":"sT2FHJ4L8XuGhSTXbFOgk6lCA/jsjukMlUSmD9euqVF9m0wdx5MOtg9nDO+N6ENgsN+096eo3jlIPhTwKwxigQ=="
+  },
+  {
+   "name":"REPS ZSC_API_CLFN_PRODUCT==========CL.abap",
+   "fingerprint":"Jz9BGSl1kslA7rOV3tugztV4xxahKv0MeRl/D3864BYImUjDmd7uqU7SjhvX4mEHd5oYevEo20sN6Wa6Slw24Q=="
+  },
+  {
+   "name":"REPS ZSC_API_CLFN_PRODUCT==========CT.abap",
+   "fingerprint":"p1azKsLC60d5Bpzv+0j/LpxeTBQqzJZWy6kJwsPzA6CW7la52wbhoOFWyiu90FAca3e9PPpbmsNlGV7/clQumg=="
+  }
+ ],
+ "fingerprintAll":"HTRIYdvV8HmUc66YUAdWd1GvMyu2rhjSObk1s24cEkFzt5zHMuP4j+SfG72ET4XKxItokjSgTnU8HsrrGL8eoA=="
+}

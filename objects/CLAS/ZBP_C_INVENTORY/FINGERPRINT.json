@@ -1,0 +1,46 @@
+{
+ "fingerprints":
+ [
+  {
+   "name":"CINC ZBP_C_INVENTORY===============CCAU.abap",
+   "fingerprint":"o1H/TWq7NXp9vZZv3Lzp2SmteVkO1GTV0tLAfyVCoc72+auUPivJDJx7R69I3/FRrlv2vqHcNC4Bugji3sfMkA=="
+  },
+  {
+   "name":"CINC ZBP_C_INVENTORY===============CCDEF.abap",
+   "fingerprint":"e8GD8zlOjs5yWoyJlViU4OqFqjATvaZrlF5ZaJCpjvl+KDF0EL8kvMVuIa04oCJsk9deMcn2oKH/rtG2dZ90Mg=="
+  },
+  {
+   "name":"CINC ZBP_C_INVENTORY===============CCIMP.abap",
+   "fingerprint":"C1C0X+suJnlDr5hKt0p7aQvaoW+fYkKwHaojj5m2l0UhO0aAWZLorO0dNBgj4+8MumyFjX5aaej6FBQ5GfySAQ=="
+  },
+  {
+   "name":"CINC ZBP_C_INVENTORY===============CCMAC.abap",
+   "fingerprint":"hoB/D4tdyq1mTT+JOT7+HkqmWSNeiEm9BQllogVdzmDzeZww1VQa5eBSKtpdBTJ10izJhcj0t5Ap6LFrzNZagQ=="
+  },
+  {
+   "name":"CLAS ZBP_C_INVENTORY.asx.json",
+   "fingerprint":"RamnYNDonr73Kyb1TAYtESolveE2nl6804aUv9Awk0/dzRrWrwtzwbOD+DAdafzyTKwSsthRzz6BWK0hMXUNhw=="
+  },
+  {
+   "name":"CLSD ZBP_C_INVENTORY.abap",
+   "fingerprint":"4fSugijYDWoX/PI7ymutZzTdKlKy2El1ovzevXI6D0sJDb5OnVuuNjxxjG5IpQIWi/zHKSTeCi9QiG3bpQI/2g=="
+  },
+  {
+   "name":"CPRI ZBP_C_INVENTORY.abap",
+   "fingerprint":"Sxp+A9gZ9MNZyzcalV4EzwctYSgC3jacTG0bpdIYkRvx+E82Rgsg7t9jaqcXKUHmvFSoll+qTbSndO3hqRUmAg=="
+  },
+  {
+   "name":"CPRO ZBP_C_INVENTORY.abap",
+   "fingerprint":"v0rr72DewHLn9jAPER38SNGa+eImDXe9LQvyh4p2NardkRm37u8MhGoG0b8jnbbn3c8uibwHEBiSY/+vOq/LWQ=="
+  },
+  {
+   "name":"CPUB ZBP_C_INVENTORY.abap",
+   "fingerprint":"STIgo9Qy9qK6Ijer4CPM17nZNpRmrXCW1dLrM4gY/3HkqWT0hLOCfyNkJjk0/ET2CttOm8WwQbfc2W6cHjBYAg=="
+  },
+  {
+   "name":"REPS ZBP_C_INVENTORY===============CT.abap",
+   "fingerprint":"ZyDOqW2wmn4E4fu0hh0Y70XmtASw1FTN4LcQ6bkCdVdfI1r8slN5aXJPWHU77ve9CVQZLg5PSEyuyZsekjpKbA=="
+  }
+ ],
+ "fingerprintAll":"Lst0WLreM4l4PeIcdhgQTXioppjWp6aB5raEX2oP1cL/IeLYkTtBoY+Lo+Q/x1IYZvjyKD4kcry0Rk5wzhi4kQ=="
+}
