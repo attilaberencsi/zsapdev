@@ -9,7 +9,7 @@
     "AS4USER":"SAP_CUSTOMER",
     "AS4DATE":"0000-00-00",
     "AS4TIME":"00:00:00",
-    "SOURCE":"@AccessControl.authorizationCheck: #NOT_REQUIRED\r\n@EndUserText.label: 'Draft query view forShop'\r\n@AbapCatalog.viewEnhancementCategory: [ #PROJECTION_LIST ]\r\n@AbapCatalog.extensibility: {\r\n  extensible: true, \r\n  elementSuffix: 'ZAA', \r\n  allowNewDatasources: false, \r\n  allowNewCompositions: false, \r\n  dataSources: [ 'Shop' ], \r\n  quota: {\r\n    maximumFields: 100 , \r\n    maximumBytes: 10000 \r\n  }\r\n}\r\ndefine view entity ZR_Shop_D_B\r\n  as select from ZSHOP00D_B as Shop\r\n{\r\n  key OrderUUID as OrderUUID,\r\n  OrderID as OrderID,\r\n  OrderedItem as OrderedItem,\r\n  CurrencyCode as CurrencyCode,\r\n  OrderItemPrice as OrderItemPrice,\r\n  DeliveryDate as DeliveryDate,\r\n  OverallStatus as OverallStatus,\r\n  Notes as Notes,\r\n  LastChangedAt as LastChangedAt,\r\n  CreatedBy as CreatedBy,\r\n  CreatedAt as CreatedAt,\r\n  LocalLastChangedBy as LocalLastChangedBy,\r\n  LastChangedBy as LastChangedBy,\r\n  LocalLastChangedAt as LocalLastChangedAt,\r\n  draftentitycreationdatetime as Draftentitycreationdatetime,\r\n  draftentitylastchangedatetime as Draftentitylastchangedatetime,\r\n  draftadministrativedatauuid as Draftadministrativedatauuid,\r\n  draftentityoperationcode as Draftentityoperationcode,\r\n  hasactiveentity as Hasactiveentity,\r\n  draftfieldchanges as Draftfieldchanges\r\n}\r\n/*+[internal] {\n\"BASEINFO\":\n{\n\"FROM\":\n[\n\"ZSHOP00D_B\"\n],\n\"ASSOCIATED\":\n[],\n\"BASE\":\n[],\n\"ANNO_REF\":\n[],\n\"SCALAR_FUNCTION\":\n[],\n\"VERSION\":0,\n\"ANNOREF_EVALUATION_ERROR\":\"\"\n}\n}*/",
+    "SOURCE":"@AccessControl.authorizationCheck: #NOT_REQUIRED\r\n@EndUserText.label: 'Draft query view for Web Order'\r\n@AbapCatalog.viewEnhancementCategory: [ #PROJECTION_LIST ]\r\n@AbapCatalog.extensibility: {\r\n  extensible: true,\r\n  elementSuffix: 'ZAA',\r\n  allowNewDatasources: false,\r\n  allowNewCompositions: false,\r\n  dataSources: [ 'Shop' ],\r\n  quota: {\r\n    maximumFields: 100 ,\r\n    maximumBytes: 10000\r\n  }\r\n}\r\ndefine view entity ZR_Shop_D_B\r\n  as select from zshop00d_b as Shop\r\n{\r\n  key orderuuid                     as OrderUUID,\r\n      orderid                       as OrderID,\r\n      ordereditem                   as OrderedItem,\r\n      currencycode                  as CurrencyCode,\r\n      orderitemprice                as OrderItemPrice,\r\n      deliverydate                  as DeliveryDate,\r\n      overallstatus                 as OverallStatus,\r\n      notes                         as Notes,\r\n      lastchangedat                 as LastChangedAt,\r\n      createdby                     as CreatedBy,\r\n      createdat                     as CreatedAt,\r\n      locallastchangedby            as LocalLastChangedBy,\r\n      lastchangedby                 as LastChangedBy,\r\n      locallastchangedat            as LocalLastChangedAt,\r\n      draftentitycreationdatetime   as Draftentitycreationdatetime,\r\n      draftentitylastchangedatetime as Draftentitylastchangedatetime,\r\n      draftadministrativedatauuid   as Draftadministrativedatauuid,\r\n      draftentityoperationcode      as Draftentityoperationcode,\r\n      hasactiveentity               as Hasactiveentity,\r\n      draftfieldchanges             as Draftfieldchanges\r\n}\r\n/*+[internal] {\n\"BASEINFO\":\n{\n\"FROM\":\n[\n\"ZSHOP00D_B\"\n],\n\"ASSOCIATED\":\n[],\n\"BASE\":\n[],\n\"ANNO_REF\":\n[],\n\"SCALAR_FUNCTION\":\n[],\n\"VERSION\":0,\n\"ANNOREF_EVALUATION_ERROR\":\"\"\n}\n}*/",
     "PARENTNAME":"",
     "ACTFLAG":"",
     "CHGFLAG":"",
@@ -28,7 +28,7 @@
     "STRUCOBJN":"ZR_SHOP_D_B",
     "DDLANGUAGE":"E",
     "AS4LOCAL":"N",
-    "DDTEXT":"Draft query view forShop"
+    "DDTEXT":"Draft query view for Web Order"
    }
   ]
  },
@@ -156,7 +156,7 @@
     "STRUCOBJN":"ZR_SHOP_D_B",
     "NAME":"ENDUSERTEXT.LABEL",
     "POSITION":4,
-    "VALUE":"'Draft query view forShop'"
+    "VALUE":"'Draft query view for Web Order'"
    }
   ]
  },

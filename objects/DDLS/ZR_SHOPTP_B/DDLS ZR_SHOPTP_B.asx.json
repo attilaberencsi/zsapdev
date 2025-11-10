@@ -9,7 +9,7 @@
     "AS4USER":"SAP_CUSTOMER",
     "AS4DATE":"0000-00-00",
     "AS4TIME":"00:00:00",
-    "SOURCE":"@AccessControl.authorizationCheck: #CHECK\r\n@Metadata.allowExtensions: true\r\n@EndUserText.label: 'CDS View forShop'\r\n@ObjectModel.sapObjectNodeType.name: 'ZShop_B'\r\n@AbapCatalog.extensibility: {\r\n  extensible: true, \r\n  elementSuffix: 'ZAA', \r\n  allowNewDatasources: false, \r\n  allowNewCompositions: true, \r\n  dataSources: [ '_Extension' ], \r\n  quota: {\r\n    maximumFields: 100 , \r\n    maximumBytes: 10000 \r\n  }\r\n}\r\ndefine root view entity ZR_ShopTP_B\r\n  as select from ZI_Shop_B as Shop\r\n  association [1] to ZE_Shop_B as _Extension on $projection.OrderUUID = _Extension.OrderUUID\r\n{\r\n  key OrderUUID,\r\n  OrderID,\r\n  OrderedItem,\r\n  CurrencyCode,\r\n  @Semantics.amount.currencyCode: 'CurrencyCode'\r\n  OrderItemPrice,\r\n  DeliveryDate,\r\n  OverallStatus,\r\n  Notes,\r\n  @Semantics.systemDateTime.lastChangedAt: true\r\n  LastChangedAt,\r\n  @Semantics.user.createdBy: true\r\n  CreatedBy,\r\n  @Semantics.systemDateTime.createdAt: true\r\n  CreatedAt,\r\n  @Semantics.user.localInstanceLastChangedBy: true\r\n  LocalLastChangedBy,\r\n  @Semantics.user.lastChangedBy: true\r\n  LastChangedBy,\r\n  @Semantics.systemDateTime.localInstanceLastChangedAt: true\r\n  LocalLastChangedAt,\r\n  _Extension\r\n}\r\n/*+[internal] {\n\"BASEINFO\":\n{\n\"FROM\":\n[\n\"ZI_SHOP_B\"\n],\n\"ASSOCIATED\":\n[\n\"ZE_SHOP_B\"\n],\n\"BASE\":\n[],\n\"ANNO_REF\":\n[],\n\"SCALAR_FUNCTION\":\n[],\n\"VERSION\":0,\n\"ANNOREF_EVALUATION_ERROR\":\"\"\n}\n}*/",
+    "SOURCE":"@AccessControl.authorizationCheck: #CHECK\r\n@Metadata.allowExtensions: true\r\n@EndUserText.label: 'Web Order'\r\n@ObjectModel.sapObjectNodeType.name: 'ZShop_B'\r\n@AbapCatalog.extensibility: {\r\n  extensible: true,\r\n  elementSuffix: 'ZAA',\r\n  allowNewDatasources: false,\r\n  allowNewCompositions: true,\r\n  dataSources: [ '_Extension' ],\r\n  quota: {\r\n    maximumFields: 100 ,\r\n    maximumBytes: 10000\r\n  }\r\n}\r\ndefine root view entity ZR_ShopTP_B\r\n  as select from ZI_Shop_B as Shop\r\n  association [1] to ZE_Shop_B as _Extension on $projection.OrderUUID = _Extension.OrderUUID\r\n{\r\n  key OrderUUID,\r\n      OrderID,\r\n      OrderedItem,\r\n      CurrencyCode,\r\n      @Semantics.amount.currencyCode: 'CurrencyCode'\r\n      OrderItemPrice,\r\n      DeliveryDate,\r\n      OverallStatus,\r\n      Notes,\r\n      @Semantics.systemDateTime.lastChangedAt: true\r\n      LastChangedAt,\r\n      @Semantics.user.createdBy: true\r\n      CreatedBy,\r\n      @Semantics.systemDateTime.createdAt: true\r\n      CreatedAt,\r\n      @Semantics.user.localInstanceLastChangedBy: true\r\n      LocalLastChangedBy,\r\n      @Semantics.user.lastChangedBy: true\r\n      LastChangedBy,\r\n      @Semantics.systemDateTime.localInstanceLastChangedAt: true\r\n      LocalLastChangedAt,\r\n      _Extension\r\n}\r\n/*+[internal] {\n\"BASEINFO\":\n{\n\"FROM\":\n[\n\"ZE_SHOP_B\",\n\"ZI_SHOP_B\"\n],\n\"ASSOCIATED\":\n[\n\"ZE_SHOP_B\"\n],\n\"BASE\":\n[],\n\"ANNO_REF\":\n[],\n\"SCALAR_FUNCTION\":\n[],\n\"VERSION\":0,\n\"ANNOREF_EVALUATION_ERROR\":\"\"\n}\n}*/",
     "PARENTNAME":"",
     "ACTFLAG":"",
     "CHGFLAG":"",
@@ -28,7 +28,25 @@
     "STRUCOBJN":"ZR_SHOPTP_B",
     "DDLANGUAGE":"E",
     "AS4LOCAL":"N",
-    "DDTEXT":"CDS View forShop"
+    "DDTEXT":"Web Order"
+   }
+  ]
+ },
+ {
+  "table":"DDDDLSRC03NT",
+  "data":
+  [
+   {
+    "DDLNAME":"ZR_SHOPTP_B",
+    "STRUCOBJN":"ZR_SHOPTP_B",
+    "NODENAME":".NODE1",
+    "DDLANGUAGE":"E",
+    "AS4LOCAL":"N",
+    "FIELDNAME":"ZZFEEDBACKZAA",
+    "DEPTH":0,
+    "DDTEXT":"",
+    "FIELDLABEL":"Feedback",
+    "QUICKINFO":""
    }
   ]
  },
@@ -159,6 +177,34 @@
     "NAME":"SEMANTICS.AMOUNT.CURRENCYCODE",
     "POSITION":4,
     "VALUE":"'CurrencyCode'"
+   },
+   {
+    "STRUCOBJN":"ZR_SHOPTP_B",
+    "LFIELDNAME":"ZZFEEDBACKZAA",
+    "NAME":"ENDUSERTEXT",
+    "POSITION":17,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZR_SHOPTP_B",
+    "LFIELDNAME":"ZZFEEDBACKZAA",
+    "NAME":"ENDUSERTEXT.LABEL",
+    "POSITION":18,
+    "VALUE":"'Feedback'"
+   },
+   {
+    "STRUCOBJN":"ZR_SHOPTP_B",
+    "LFIELDNAME":"ZZFEEDBACKZAA",
+    "NAME":"SEMANTICS",
+    "POSITION":19,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZR_SHOPTP_B",
+    "LFIELDNAME":"ZZFEEDBACKZAA",
+    "NAME":"SEMANTICS.TEXT",
+    "POSITION":20,
+    "VALUE":"true"
    }
   ]
  },
@@ -242,7 +288,7 @@
     "STRUCOBJN":"ZR_SHOPTP_B",
     "NAME":"ENDUSERTEXT.LABEL",
     "POSITION":6,
-    "VALUE":"'CDS View forShop'"
+    "VALUE":"'Web Order'"
    },
    {
     "STRUCOBJN":"ZR_SHOPTP_B",

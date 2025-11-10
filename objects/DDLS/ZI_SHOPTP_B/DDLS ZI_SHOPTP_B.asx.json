@@ -9,7 +9,7 @@
     "AS4USER":"SAP_CUSTOMER",
     "AS4DATE":"0000-00-00",
     "AS4TIME":"00:00:00",
-    "SOURCE":"@AccessControl.authorizationCheck: #CHECK\r\n@EndUserText.label: 'Projection View forShop'\r\n@AbapCatalog.extensibility: {\r\n  extensible: true, \r\n  elementSuffix: 'ZAA', \r\n  allowNewDatasources: false, \r\n  allowNewCompositions: true, \r\n  dataSources: [ 'Shop' ], \r\n  quota: {\r\n    maximumFields: 100 , \r\n    maximumBytes: 10000 \r\n  }\r\n}\r\ndefine root view entity ZI_ShopTP_B\r\n  provider contract TRANSACTIONAL_INTERFACE\r\n  as projection on ZR_ShopTP_B as Shop\r\n{\r\n  key OrderUUID,\r\n  OrderID,\r\n  OrderedItem,\r\n  CurrencyCode,\r\n  OrderItemPrice,\r\n  DeliveryDate,\r\n  OverallStatus,\r\n  Notes,\r\n  LastChangedAt,\r\n  CreatedBy,\r\n  CreatedAt,\r\n  LocalLastChangedBy,\r\n  LastChangedBy,\r\n  LocalLastChangedAt\r\n}\r\n/*+[internal] {\n\"BASEINFO\":\n{\n\"FROM\":\n[\n\"ZR_SHOPTP_B\"\n],\n\"ASSOCIATED\":\n[],\n\"BASE\":\n[],\n\"ANNO_REF\":\n[],\n\"SCALAR_FUNCTION\":\n[],\n\"VERSION\":0,\n\"ANNOREF_EVALUATION_ERROR\":\"\"\n}\n}*/",
+    "SOURCE":"@AccessControl.authorizationCheck: #CHECK\r\n@EndUserText.label: 'Projection View for Web Order'\r\n@AbapCatalog.extensibility: {\r\n  extensible: true,\r\n  elementSuffix: 'ZAA',\r\n  allowNewDatasources: false,\r\n  allowNewCompositions: true,\r\n  dataSources: [ 'Shop' ],\r\n  quota: {\r\n    maximumFields: 100 ,\r\n    maximumBytes: 10000\r\n  }\r\n}\r\ndefine root view entity ZI_ShopTP_B\r\n  provider contract transactional_interface\r\n  as projection on ZR_ShopTP_B as Shop\r\n{\r\n  key OrderUUID,\r\n      OrderID,\r\n      OrderedItem,\r\n      CurrencyCode,\r\n      OrderItemPrice,\r\n      DeliveryDate,\r\n      OverallStatus,\r\n      Notes,\r\n      LastChangedAt,\r\n      CreatedBy,\r\n      CreatedAt,\r\n      LocalLastChangedBy,\r\n      LastChangedBy,\r\n      LocalLastChangedAt\r\n}\r\n/*+[internal] {\n\"BASEINFO\":\n{\n\"FROM\":\n[\n\"ZR_SHOPTP_B\"\n],\n\"ASSOCIATED\":\n[],\n\"BASE\":\n[],\n\"ANNO_REF\":\n[],\n\"SCALAR_FUNCTION\":\n[],\n\"VERSION\":0,\n\"ANNOREF_EVALUATION_ERROR\":\"\"\n}\n}*/",
     "PARENTNAME":"",
     "ACTFLAG":"",
     "CHGFLAG":"",
@@ -28,7 +28,25 @@
     "STRUCOBJN":"ZI_SHOPTP_B",
     "DDLANGUAGE":"E",
     "AS4LOCAL":"N",
-    "DDTEXT":"Projection View forShop"
+    "DDTEXT":"Projection View for Web Order"
+   }
+  ]
+ },
+ {
+  "table":"DDDDLSRC03NT",
+  "data":
+  [
+   {
+    "DDLNAME":"ZI_SHOPTP_B",
+    "STRUCOBJN":"ZI_SHOPTP_B",
+    "NODENAME":".NODE1",
+    "DDLANGUAGE":"E",
+    "AS4LOCAL":"N",
+    "FIELDNAME":"ZZFEEDBACKZAA",
+    "DEPTH":0,
+    "DDTEXT":"",
+    "FIELDLABEL":"Feedback",
+    "QUICKINFO":""
    }
   ]
  },
@@ -61,6 +79,34 @@
     "NAME":"ABAPCATALOG.INTERNAL.ISMANDT",
     "POSITION":2,
     "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZI_SHOPTP_B",
+    "LFIELDNAME":"ZZFEEDBACKZAA",
+    "NAME":"ENDUSERTEXT",
+    "POSITION":3,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZI_SHOPTP_B",
+    "LFIELDNAME":"ZZFEEDBACKZAA",
+    "NAME":"ENDUSERTEXT.LABEL",
+    "POSITION":4,
+    "VALUE":"'Feedback'"
+   },
+   {
+    "STRUCOBJN":"ZI_SHOPTP_B",
+    "LFIELDNAME":"ZZFEEDBACKZAA",
+    "NAME":"SEMANTICS",
+    "POSITION":5,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZI_SHOPTP_B",
+    "LFIELDNAME":"ZZFEEDBACKZAA",
+    "NAME":"SEMANTICS.TEXT",
+    "POSITION":6,
+    "VALUE":"true"
    }
   ]
  },
@@ -144,7 +190,7 @@
     "STRUCOBJN":"ZI_SHOPTP_B",
     "NAME":"ENDUSERTEXT.LABEL",
     "POSITION":4,
-    "VALUE":"'Projection View forShop'"
+    "VALUE":"'Projection View for Web Order'"
    }
   ]
  },
