@@ -35,7 +35,7 @@
     "SRCSYSTEM":"...",
     "AUTHOR":"SAP_CUSTOMER",
     "SRCDEP":"",
-    "DEVCLASS":"ZSAPDEV_RAP_SAMPLE_SAP_BO",
+    "DEVCLASS":"ZSAPDEV_RAP_SAMPLE_SAP_EXT",
     "GENFLAG":"",
     "EDTFLAG":"",
     "CPROJECT":" S",
