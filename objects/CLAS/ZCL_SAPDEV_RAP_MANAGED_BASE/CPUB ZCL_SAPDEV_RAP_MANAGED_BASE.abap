@@ -37,3 +37,14 @@ CLASS zcl_sapdev_rap_managed_base DEFINITION
       IMPORTING i_entity_name TYPE abp_entity_name
                 i_instance    TYPE any
       CHANGING  c_path        TYPE any.
+
+    "! Retrieve next number from range
+    "! @parameter i_object       | Number Range Object
+    "! @parameter i_interval     | Interval Number
+    "! @parameter e_number       | Number
+    "! @parameter e_behv_message | Number
+    CLASS-METHODS get_number
+      IMPORTING i_object       TYPE cl_numberrange_runtime=>nr_object
+                i_interval     TYPE cl_numberrange_runtime=>nr_interval
+      EXPORTING e_number       TYPE cl_numberrange_runtime=>nr_number
+                e_behv_message TYPE REF TO if_abap_behv_message.

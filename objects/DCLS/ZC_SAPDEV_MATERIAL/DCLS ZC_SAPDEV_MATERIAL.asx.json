@@ -1,0 +1,60 @@
+[
+ {
+  "table":"ACMDCLSRC",
+  "data":
+  [
+   {
+    "DCLNAME":"ZC_SAPDEV_MATERIAL",
+    "AS4LOCAL":"A",
+    "AS4USER":"SAP_CUSTOMER",
+    "AS4DATE":"2025-11-03",
+    "AS4TIME":"08:47:40",
+    "SOURCE":"@EndUserText.label: 'ZC_SAPDEV_Material'\r\n@MappingRole: true\r\ndefine role ZC_SAPDEV_Material {\r\n  grant select on ZC_SAPDEV_Material\r\n  where INHERITING CONDITIONS FROM ENTITY ZR_SAPDEV_Material REPLACING { ROOT WITH _BaseEntity };\r\n}",
+    "PARENTNAME":"",
+    "ABAP_LANGUAGE_VERSION":"5"
+   }
+  ]
+ },
+ {
+  "table":"ACMDCLSRCT",
+  "data":
+  [
+   {
+    "DCLNAME":"ZC_SAPDEV_MATERIAL",
+    "DCLLANGUAGE":"E",
+    "AS4LOCAL":"A",
+    "DDTEXT":"Access Control for ZC_SAPDEV_Material"
+   }
+  ]
+ },
+ {
+  "table":"TADIR",
+  "data":
+  [
+   {
+    "PGMID":"R3TR",
+    "OBJECT":"DCLS",
+    "OBJ_NAME":"ZC_SAPDEV_MATERIAL",
+    "KORRNUM":"",
+    "SRCSYSTEM":"...",
+    "AUTHOR":"SAP_CUSTOMER",
+    "SRCDEP":"",
+    "DEVCLASS":"ZSAPDEV_SAMPLE_RAP_3D_PRINT",
+    "GENFLAG":"",
+    "EDTFLAG":"",
+    "CPROJECT":" S",
+    "MASTERLANG":"E",
+    "VERSID":"",
+    "PAKNOCHECK":"",
+    "OBJSTABLTY":"",
+    "COMPONENT":"ZSAPDEV",
+    "CRELEASE":"100",
+    "DELFLAG":"",
+    "TRANSLTTXT":"",
+    "CREATED_ON":"2025-11-03",
+    "CHECK_DATE":"2025-11-03",
+    "CHECK_CFG":""
+   }
+  ]
+ }
+]

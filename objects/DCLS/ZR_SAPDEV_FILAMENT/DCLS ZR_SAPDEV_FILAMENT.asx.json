@@ -1,0 +1,60 @@
+[
+ {
+  "table":"ACMDCLSRC",
+  "data":
+  [
+   {
+    "DCLNAME":"ZR_SAPDEV_FILAMENT",
+    "AS4LOCAL":"A",
+    "AS4USER":"SAP_CUSTOMER",
+    "AS4DATE":"2025-11-03",
+    "AS4TIME":"09:19:45",
+    "SOURCE":"@EndUserText.label: 'ZR_SAPDEV_Filament'\r\n@MappingRole: true\r\ndefine role ZR_SAPDEV_Filament {\r\n  grant select on ZR_SAPDEV_Filament\r\n  where TRUE;\r\n}",
+    "PARENTNAME":"",
+    "ABAP_LANGUAGE_VERSION":"5"
+   }
+  ]
+ },
+ {
+  "table":"ACMDCLSRCT",
+  "data":
+  [
+   {
+    "DCLNAME":"ZR_SAPDEV_FILAMENT",
+    "DCLLANGUAGE":"E",
+    "AS4LOCAL":"A",
+    "DDTEXT":"Access Control for ZR_SAPDEV_Filament"
+   }
+  ]
+ },
+ {
+  "table":"TADIR",
+  "data":
+  [
+   {
+    "PGMID":"R3TR",
+    "OBJECT":"DCLS",
+    "OBJ_NAME":"ZR_SAPDEV_FILAMENT",
+    "KORRNUM":"",
+    "SRCSYSTEM":"...",
+    "AUTHOR":"SAP_CUSTOMER",
+    "SRCDEP":"",
+    "DEVCLASS":"ZSAPDEV_SAMPLE_RAP_3D_PRINT",
+    "GENFLAG":"",
+    "EDTFLAG":"",
+    "CPROJECT":" S",
+    "MASTERLANG":"E",
+    "VERSID":"",
+    "PAKNOCHECK":"",
+    "OBJSTABLTY":"",
+    "COMPONENT":"ZSAPDEV",
+    "CRELEASE":"100",
+    "DELFLAG":"",
+    "TRANSLTTXT":"",
+    "CREATED_ON":"2025-11-03",
+    "CHECK_DATE":"2025-11-03",
+    "CHECK_CFG":""
+   }
+  ]
+ }
+]

@@ -55,6 +55,24 @@
     "ARBGB":"ZSAPDEV_RAP",
     "MSGNR":"002",
     "TEXT":"Field is mandatory"
+   },
+   {
+    "SPRSL":"E",
+    "ARBGB":"ZSAPDEV_RAP",
+    "MSGNR":"003",
+    "TEXT":"Number range error: &1"
+   },
+   {
+    "SPRSL":"E",
+    "ARBGB":"ZSAPDEV_RAP",
+    "MSGNR":"004",
+    "TEXT":"Number Range Object &1, Interval &2 is running out of numbers"
+   },
+   {
+    "SPRSL":"E",
+    "ARBGB":"ZSAPDEV_RAP",
+    "MSGNR":"005",
+    "TEXT":"Number Range Object &1, Interval &2 ran out of numbers"
    }
   ]
  },
@@ -102,6 +120,27 @@
     "NAME":"SAP_CUSTOMER",
     "DATUM":"2025-08-27",
     "SELFDEF":"3"
+   },
+   {
+    "ARBGB":"ZSAPDEV_RAP",
+    "MSGNR":"003",
+    "NAME":"SAP_CUSTOMER",
+    "DATUM":"2026-01-22",
+    "SELFDEF":"3"
+   },
+   {
+    "ARBGB":"ZSAPDEV_RAP",
+    "MSGNR":"004",
+    "NAME":"SAP_CUSTOMER",
+    "DATUM":"2026-01-22",
+    "SELFDEF":"3"
+   },
+   {
+    "ARBGB":"ZSAPDEV_RAP",
+    "MSGNR":"005",
+    "NAME":"SAP_CUSTOMER",
+    "DATUM":"2026-01-22",
+    "SELFDEF":"3"
    }
   ]
  },
@@ -129,8 +168,8 @@
     "CRELEASE":"100",
     "DELFLAG":"",
     "TRANSLTTXT":"",
-    "CREATED_ON":"2025-08-10",
-    "CHECK_DATE":"2025-08-10",
+    "CREATED_ON":"2025-11-03",
+    "CHECK_DATE":"2025-11-03",
     "CHECK_CFG":""
    }
   ]

@@ -19,7 +19,7 @@
   },
   {
    "name":"CLAS ZCL_SAPDEV_RAP_MANAGED_BASE.asx.json",
-   "fingerprint":"ckbbG5btLRxCkNyFzrVgGdr3MZ+JDTnAw6N6z7MBXaolzB/pFicL13ATQ1+E4P4MwmK68oDsg7qIWB+s+X4PHA=="
+   "fingerprint":"PncapRjmBqr/6fBmq+d9DoboAJCtUE2gMHJsyi5MV7OkKlIwc5Ziq1xV4GHv0ph4mmSRGuSO/DX49HNxPZNsvQ=="
   },
   {
    "name":"CLSD ZCL_SAPDEV_RAP_MANAGED_BASE.abap",
@@ -31,11 +31,11 @@
   },
   {
    "name":"CPRO ZCL_SAPDEV_RAP_MANAGED_BASE.abap",
-   "fingerprint":"ZAAQ4jQeSIIjZF9FSOL+fBB90PtfKP6yQjXzKMnypCE4jZMPY8wPPrcY2c7G+pq/6JdVocg6CU+Uhfw1IATyeg=="
+   "fingerprint":"mIGw0Y3i4nffaPJQmwhiCdEsEuyqTmA2nhbbunPz5lk16ulHZT0hNsNTgZaF+iXAKfcT3amZmSBSWqY/PKi5ow=="
   },
   {
    "name":"CPUB ZCL_SAPDEV_RAP_MANAGED_BASE.abap",
-   "fingerprint":"X/GVEOgj3LlISP0hUuZLCL61tQm8pjzBjnqFlQsgi9nVkqOEFxKACddGgDGlXaGMrv/yLk+Ob1pfCC6kWLVi1g=="
+   "fingerprint":"R47vKoHgfJToG4rL7MTCSLsxxHAkSjU3Bp1LfiSyVF0BNdTebNS2eGpZxRUC/AqoltiC1as+vJDh0DzvhA09OA=="
   },
   {
    "name":"METH CONSTRUCTOR.abap",
@@ -44,6 +44,10 @@
   {
    "name":"METH FILL_PATH.abap",
    "fingerprint":"CuCt6JhygdgmZ8zMT8ZQ60ue2Yqs/2AOuRL0L+rHcAJtLYdpEmattPLbUe9E5+0P3LLft04exrhUw3EI0oeXJQ=="
+  },
+  {
+   "name":"METH GET_NUMBER.abap",
+   "fingerprint":"x1r1pKSfUIKFlUOSNlOI6O2mYe0hts21ybhQJMe/OHmnit8QubduvVcgsqnAByfAIcf0GaJLWPUlste35IkT8w=="
   },
   {
    "name":"METH READ_ANCESTOR.abap",
@@ -58,5 +62,5 @@
    "fingerprint":"O9Kynk/ecKb+VrzpFeATLfUqPXMa24cqBU2FjTsDCw29wZ5kCetKTa0Dz3lHb1/sYGtrdKWY1b9vII06qFmKtA=="
   }
  ],
- "fingerprintAll":"vAyjplO1cnSltSc4sP8JKz48O8S7vn6YSPkFJ9l71nJosFkGjZspEPcIykFKC4eaA16abY02NVHgKdatwerdTw=="
+ "fingerprintAll":"lVE6GeBuIeBrOZeFguuiE1LmvrdgvmKMApI28OlgD9xau/9sA8t0X7zLk0gmuJX1Y5xZP3r6L1QBnu5Sko3vqA=="
 }
